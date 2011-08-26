@@ -17,7 +17,8 @@ WriteMakefile(
                     'IO::Socket::SSL' => 0,
                     'XML::XPath::XMLParser' => 0,
                     'WWW::YouTube::Download' => 0,
-                    'Text::Unaccent' => 0,
                     'LWP::Protocol::https' => 0,
+                    'Mozilla::CA' => 0,
+                    'DateTime' => 0,
                     },
 );

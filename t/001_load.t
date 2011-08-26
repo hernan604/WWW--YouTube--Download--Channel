@@ -10,7 +10,8 @@ my $yt = WWW::YouTube::Download::Channel->new ();
 isa_ok ($yt, 'WWW::YouTube::Download::Channel');
 $yt->debug(1);
 $yt->apply_regex_filter('translate beat box'); #only leech this
-$yt->apply_regex_skip('skiiiipaaaa');
+$yt->apply_regex_skip('skip|some|Bad Videos');
+$yt->newer_than( { day => 1, month => 12, year => 2000 } );
 $yt->leech_channel('google');
 $yt->download_all;
 
