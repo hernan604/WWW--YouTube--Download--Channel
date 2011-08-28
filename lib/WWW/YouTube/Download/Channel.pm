@@ -9,7 +9,7 @@ use Perl6::Form;
 use DateTime;
 use Try::Tiny;
 
-our $VERSION = '0.10';
+our $VERSION = '0.09';
 our $VER     = $VERSION;
 
 has agent => (
@@ -336,7 +336,6 @@ sub list_videos {
 sub download_all {
     my ($self) = @_;
     my $client = WWW::YouTube::Download->new;
-    $client->ua( agent => "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)" );
 
     my $counter = 0;
     warn 'Total '
